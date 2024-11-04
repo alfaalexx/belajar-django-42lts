@@ -14,19 +14,19 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-# from django.http import HttpResponse
+
 from django.contrib import admin
 from django.urls import path
 
-#kode dibawah ini seharusnya berada di file view.py
-# def index(request):
-#     return HttpResponse("Hello, World!")
-
-# def blog(request):
-#     return HttpResponse("Halaman Blog")
+#Memanggil fungsi index dan blog dari file views.py
+# from .views import index, blog
+#versi alternatifnya
+from . import views
+#sama seperti versi pertama tapi versi ini mengambil semua fungsi yang ada di views.py
+# from  . views import *
 
 urlpatterns = [
-    # path('',index),
+    path('', views.index),
     path('admin/', admin.site.urls),
-    # path('blog/', blog)
+    path('blog/',views.blog)
 ]
