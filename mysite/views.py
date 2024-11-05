@@ -1,8 +1,11 @@
 #kode dibawah ini seharusnya berada di file views.py
 from django.http import HttpResponse
 
+#django menyediakan package jalan pintas 
+from django.shortcuts import render
+
 def index(request):
-    return HttpResponse("Hello, World!")
+    return render(request, 'index.html')
 
 def blog(request):
-    return HttpResponse("Halaman Blog")
+    return render(request, 'blog.html')
