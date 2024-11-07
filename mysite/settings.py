@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
+    'kontak.apps.KontakConfig' #bisa juga menuliskan kontak saja tanpa harus panjang
 ]
 
 MIDDLEWARE = [

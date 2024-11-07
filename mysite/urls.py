@@ -22,11 +22,14 @@ from django.urls import path
 # from .views import index, blog
 #versi alternatifnya
 from . import views
+from blog import views as blogviews
+from kontak import views as kontakviews
 #sama seperti versi pertama tapi versi ini mengambil semua fungsi yang ada di views.py
 # from  . views import *
 
 urlpatterns = [
     path('', views.index),
     path('admin/', admin.site.urls),
-    path('blog/',views.blog)
+    path('blog/',blogviews.index),
+    path('kontak/',kontakviews.index)
 ]
