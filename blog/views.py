@@ -4,7 +4,12 @@ from django.http import HttpResponse
 def index(request):
     context = {
         'title':'Blog Bersama',
-        'developer':'Udin'
+        'developer':'Udin',
+        'nav':[
+            ['/blog','Blog'],
+            ['/blog/artikel','Artikel'],
+            ['/blog/berita','Berita'],
+        ]
     }
     return render(request, 'blog/blog.html', context)
 

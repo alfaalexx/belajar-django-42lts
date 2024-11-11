@@ -1,0 +1,16 @@
+
+
+<h1>
+    <ul>
+        
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        {% for link,name in nav %}
+        <ul>
+            <li><a href="{{ link }}">{{name}}</a></li>
+        </ul>
+        {% endfor %}
+        <li><a href="/kontak">Kontak</a></li>
+       
+    </ul>
+</h1>
