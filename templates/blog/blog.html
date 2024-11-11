@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Alfa Alexandra</title>
+    <title>{{ title }} | Alfa Alexandra</title>
 </head>
 <body>
-    <h1>Ini adalah halaman Blog</h1>
+    <h1>Selamat Datang di {{ title }}</h1>
+    <h3>Developer : {{ developer }}</h3>
 
     <h1>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/blog">Blog</a></li>
+            <ul>
+                <li><a href="/blog/artikel">Artikel</a></li>
+                <li><a href="/blog/berita">Berita</a></li>
+            </ul>
             <li><a href="/kontak">Kontak</a></li>
         </ul>
     </h1>
