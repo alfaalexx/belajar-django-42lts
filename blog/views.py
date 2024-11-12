@@ -9,7 +9,7 @@ def index(request):
             ['/blog','Blog'],
             ['/blog/artikel','Artikel'],
             ['/blog/berita','Berita'],
-        ]
+        ],
     }
     return render(request, 'blog/blog.html', context)
 

@@ -1,6 +1,9 @@
 {% extends "base.html" %}
-    
+
+{% load static %}    
+
 {% block content %}
+<img src="../static/images/beranda.png" alt="banner" width="100%"">
 {% include "blog/snippets/navbar.html" %}
 <h1>Selamat Datang di {{ title }}</h1>
 <h3>Developer : {{ developer }}</h3>
