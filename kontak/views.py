@@ -2,4 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, 'kontak/kontak.html')
+    context ={
+        'title':'Halaman Kontak',
+        'developer':'Alfa Alexandra'
+    }
+    return render(request, 'kontak/kontak.html', context)
